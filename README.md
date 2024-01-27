@@ -21,7 +21,7 @@ $ git clone https://github.com/Ragde54/To-do-app-React-Native-Firebase-
 2. Navigate to the project directory:
 
 ```bash
-$ cd react-native-todo-list
+$ cd to-do-app-with-firebase
 ```
 3. Install dependencies:
 ```bash
@@ -32,7 +32,7 @@ $ npm install
 - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/).
 - Enable Firestore as the database for your project.
 - Obtain your Firebase project configuration settings.
-- Add the Firebase configuration to your Expo project.
+- Add the Firebase configuration to the Fire.js file.
 
 6. Run the app:
 ```bash
