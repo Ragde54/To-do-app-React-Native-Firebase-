@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a ToDo list app built with React Native using Expo. The app allows users to create ToDo lists, sort them by categories, customize the color of each list, and save all the data in Firestore (Firebase).
+This is a ToDo list app built with React Native using Expo. The app allows users to create ToDo lists, sort them by categories, customize the color of each list, and save all the data in Firestore (Firebase). I used anonymous login for Firebase, although I might add other type of login in the future.
 
 ## Features
 
