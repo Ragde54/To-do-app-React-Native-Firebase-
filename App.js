@@ -15,9 +15,19 @@ import AddListModal from "./components/AddListModal";
 import tempData from "./tempData";
 
 export default class App extends React.Component {
-	render() {
+	state = {
+    addTodoVisible: false
+  }
+
+  toggleAddTodoModal() {
+    this.setState({addTodoVisible: !this.state.addTodoVisible})
+  }
+  render() {
 		return (
 			<View style={styles.container}>
+        <Modal animationType="slide" visible={this.state.addTodoVisible} onRequestClose={() => this.toggleAddTodoModal()}>
+          <AddListModal closeModal={() => this.toggleAddTodoModal()}/>
+        </Modal>
 				<View style={{ flexDirection: "row" }}>
 					<View style={styles.divider} />
 					<Text style={styles.title}>
@@ -28,7 +38,7 @@ export default class App extends React.Component {
 				</View>
 
 				<View style={{ marginVertical: 48 }}>
-					<TouchableOpacity style={styles.addList}>
+					<TouchableOpacity style={styles.addList} onPress={() => this.toggleAddTodoModal()}>
 						<AntDesign name="plus" size={24} color={colors.blue} />
 					</TouchableOpacity>
 
