@@ -4,7 +4,7 @@ import { getAuth, signInAnonymously } from "firebase/auth";
 import colors from "./Colors";
 
 // Delete these two lines (my config was stored in a separate file not committed to github, use your own on the next section)
-import firebaseConfig from "./firebase-config";
+import firebaseConfig from "./firebaseConfig";
 const fireConfig = firebaseConfig;
 
 // Uncomment this section and paste your Firebase config here
